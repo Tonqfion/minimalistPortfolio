@@ -115,7 +115,6 @@ p.secondary {
 @media screen and (min-width:48em) {
     .container {
       max-width:73.8rem;
-      margin:auto;
     }
   }
 
@@ -163,6 +162,15 @@ button.primary {
 }
 
 
+.about-me .container {
+  display:grid;
+  grid-template-columns: 1fr;
+  column-gap:2rem;
+  row-gap:2rem;
+  margin:2rem;
+}
+
+
 
 .text-button-container {
     margin:auto;
@@ -183,7 +191,6 @@ button.secondary {
     border:0.0625rem solid var(--primary-gray);
     background-color:#FFF;
 }
-
 
 .me-text {
     border-top:0.1rem solid rgba(51, 50, 61, 0.15);
