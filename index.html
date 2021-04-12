@@ -11,28 +11,25 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="container">
-            <div class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
-                    <path fill="#33323D" fill-rule="evenodd"
-                        d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z" />
-                </svg>
-            </div>
-            <nav class="main-nav">
-                <ul class="main-menu">
-                    <li class="main-menu-item"><a href="#" class="main-menu-link">Home</a></li>
-                    <li class="main-menu-item"><a href="#" class="main-menu-link">Portfolio</a></li>
-                    <li class="main-menu-item"><a href="#" class="main-menu-link">contact me</a></li>
-                </ul>
-                <div class="burger">
+
+	<header class="main-header">
+		<div class="container">
+			<div class="logo"><img src="img/logo.svg" alt=""></div>
+			<!-- nav.main-nav>ul.menu>li.menu-item*4>a.menu-link -->
+			<!-- < = &lt;  //  > = &gt;  //  & = &amp;  // espace insécable = &nbsp; -->
+			<nav class="main-nav">
+				<button class="toggle-menu" aria-expanded="false" aria-controls="menu">
                     <div class="line1"></div>
                     <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
-        </div>
-    </header>
+                    <div class="line3"></div></button>
+				<ul id="menu" class="menu" role="list" hidden>
+					<li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">Portfolio</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">Contact me</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
     <main>
         <section class="hero">
             <div class="container">
@@ -72,17 +69,20 @@
                         or cycling. I’d love you to check out my work.</p>
                     <button class="secondary">Go to portfolio</button>
                 </div>
-                <div class="contact-me">
-
-                    <h2>Interested in doing a project together?</h2>
-                    <span class="divider"></span>
-                    <button class="secondary">
-                        <p>Contact me</p>
-                    </button>
-                </div>
             </div>
         </section>
     </main>
+    <footer class="top-footer">
+        <div class="container">
+
+                <h2>Interested in doing a project together?</h2>
+                <span class="divider"></span>
+                <button class="secondary">
+                    <p>Contact me</p>
+                </button>
+ </div>
+
+    </footer>
     <footer class="main-footer">
         <div class="container">
             <div class="logo-white">
