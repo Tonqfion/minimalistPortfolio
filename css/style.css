@@ -59,6 +59,7 @@ button {
   text-align: center;
 }
 
+
 body {
   font-family: "Public Sans", sans-serif;
   color: var(--primary-gray);
@@ -143,7 +144,7 @@ a:active {
   width: 2.5rem;
   height: 0.3rem;
   background-color: var(--primary-gray);
-  margin: 0.5rem;
+  margin: 0.3rem;
   transition: all 0.3s ease;
 }
 
@@ -182,12 +183,14 @@ a:active {
 	right: 0;
 	background-color: var(--secondary-very-light-gray);
 	transform: translateX(-100%);
-	transition: transform .5s ease-in-out, visibility .001s .5s;
+  opacity:0;
+	transition: opacity .5s ease-in-out, transform .5s ease-in-out, visibility .001s .5s;
 }
 
 .menu:not([hidden]) {
 	transform: translateX(0%);
-	transition: visibility .001s, transform .5s .001s ease-in-out;
+  opacity:0.9;
+	transition: visibility .001s, transform .5s .001s ease-in-out, opacity .5s .001s ease-in-out;
 }
 
 @media screen and (min-width: 48em) {
@@ -203,6 +206,7 @@ a:active {
 		display: flex;
 		position: static;
 		visibility: visible;
+    opacity:1;
     transform: translateX(0%);
 	}
 }
@@ -406,7 +410,7 @@ img.img-to-hide {
   margin: auto;
 }
 
-.me-text {
+.me-text, .portfolio-text {
   padding:2rem 0;
   border-top: 0.1rem solid rgba(51, 50, 61, 0.15);
   border-bottom: 0.1rem solid rgba(51, 50, 61, 0.15);
@@ -506,4 +510,11 @@ img.img-to-hide {
 
 .social-menu svg {
   margin: 0 0.5rem;
+}
+
+
+/* Specific Portfolio */
+
+.project {
+  display:flex;
 }

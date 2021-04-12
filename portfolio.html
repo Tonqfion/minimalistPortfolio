@@ -12,38 +12,99 @@
 
 <body>
 
-	<header class="main-header">
-		<div class="container">
-			<div class="logo"><img src="img/logo.svg" alt=""></div>
-			<!-- nav.main-nav>ul.menu>li.menu-item*4>a.menu-link -->
-			<!-- < = &lt;  //  > = &gt;  //  & = &amp;  // espace insécable = &nbsp; -->
-			<nav class="main-nav">
-				<button class="toggle-menu" aria-expanded="false" aria-controls="menu">
+    <header class="main-header">
+        <div class="container">
+            <div class="logo"><img src="img/logo.svg" alt=""></div>
+            <!-- nav.main-nav>ul.menu>li.menu-item*4>a.menu-link -->
+            <!-- < = &lt;  //  > = &gt;  //  & = &amp;  // espace insécable = &nbsp; -->
+            <nav class="main-nav">
+                <button class="toggle-menu" aria-expanded="false" aria-controls="menu">
                     <div class="line1"></div>
                     <div class="line2"></div>
-                    <div class="line3"></div></button>
-				<ul id="menu" class="menu" role="list" hidden>
-					<li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-					<li class="menu-item"><a href="#" class="menu-link">Portfolio</a></li>
-					<li class="menu-item"><a href="#" class="menu-link">Contact me</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+                    <div class="line3"></div>
+                </button>
+                <ul id="menu" class="menu" role="list" hidden>
+                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Portfolio</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
+        <article class="project">
+            <div class="container">
+                <picture>
+                    <source media="(min-width: 1110px)"
+                        srcset="img\portfolio\desktop\image-portfolio-manage.jpg, img\portfolio\desktop\image-portfolio-manage@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="img\portfolio\tablet\image-portfolio-manage.jpg, img\portfolio\tablet\image-portfolio-manage@2x.jpg 2x">
+                    <img src="img\portfolio\mobile\image-portfolio-manage.jpg"
+                        srcset="img\portfolio\mobile\image-portfolio-manage@2x.jpg 2x">
+                </picture>
+                <div class="portfolio-text">
+                    <h2>Manage</h2>
+                    <p>This project required me to build a fully responsive landing page to the designs provided. I used
+                        HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the
+                        testimonial slider.</p>
+                    <button class="secondary">View project</button>
 
-        
+                </div>
+            </div>
+        </article>
+        <article class="project">
+            <div class="container">
+                <picture>
+                    <source media="(min-width: 1110px)"
+                        srcset="img\portfolio\desktop\image-portfolio-bookmark.jpg, img\portfolio\desktop\image-portfolio-bookmark@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="img\portfolio\tablet\image-portfolio-bookmark.jpg.jpg, img\portfolio\tablet\image-portfolio-bookmark@2x.jpg 2x">
+                    <img src="img\portfolio\mobile\image-portfolio-bookmark.jpg"
+                        srcset="img\portfolio\mobile\image-portfolio-bookmark@2x.jpg 2x">
+                </picture>
+                <div class="portfolio-text">
+                    <h2>Bookmark</h2>
+                    <p>This project required me to build a fully responsive landing page to the designs provided. I used
+                        HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the
+                        testimonial slider.</p>
+                    <button class="secondary">View project</button>
+
+                </div>
+            </div>
+        </article>
+        <article class="project">
+            <div class="container">
+                <picture>
+                    <source media="(min-width: 1110px)"
+                        srcset="img\portfolio\desktop\image-portfolio-insure.jpg, img\portfolio\desktop\image-portfolio-insure@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="img\portfolio\tablet\image-portfolio-insure.jpg, img\portfolio\tablet\image-portfolio-insure@2x.jpg 2x">
+                    <img src="img\portfolio\mobile\image-portfolio-insure.jpg"
+                        srcset="img\portfolio\mobile\image-portfolio-insure@2x.jpg 2x">
+                </picture>
+                <div class="portfolio-text">
+                    <h2>Insure</h2>
+                    <p>This project required me to build a fully responsive landing page to the designs provided. I used
+                        HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the
+                        testimonial slider.</p>
+                    <button class="secondary">View project</button>
+
+                </div>
+            </div>
+        </article>
+
+
     </main>
 
     <footer class="top-footer">
         <div class="container">
 
-                <h2>Interested in doing a project together?</h2>
-                <span class="divider"></span>
-                <button class="secondary">
-                    <p>Contact me</p>
-                </button>
- </div>
+            <h2>Interested in doing a project together?</h2>
+            <span class="divider"></span>
+            <button class="secondary">
+                <p>Contact me</p>
+            </button>
+        </div>
 
     </footer>
     <footer class="main-footer">
