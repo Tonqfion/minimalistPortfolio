@@ -31,20 +31,21 @@
     <main>
         <section class="hero">
             <div class="container">
-                <picture>
-                    <source media="(min-width: 1110px)" srcset="img\homepage\desktop\image-homepage-hero.jpg">
-                    <source media="(min-width: 440px)" srcset="img\homepage\tablet\image-homepage-hero.jpg">
-                    <source media="(min-width: 110px)" srcset="img\homepage\mobile\image-homepage-hero.jpg">
-                    <img src="OtherImage.png" alt="IfItDoesntMatchAnyMedia">
-                </picture>
-                <h2>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
-                    <button class="primary"><div class="svg-container"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14">
-                            <g fill="none" fill-rule="evenodd" stroke="#5FB4A2">
-                                <path d="M0 9l8 4 8-4" />
-                                <path opacity=".5" d="M0 5l8 4 8-4" />
-                                <path opacity=".25" d="M0 1l8 4 8-4" />
-                            </g>
-                        </svg></div><p class="text-button-container">About me</p></button>
+                <div class="hero-wrapper">
+                    <img class="img-to-hide" src="img/homepage/tablet/image-homepage-hero.jpg"
+                        srcset="/img/homepage/tablet/image-homepage-hero@2x.jpg 2x">
+                    <h2>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+                        <button class="primary">
+                            <div class="svg-container"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14">
+                                    <g fill="none" fill-rule="evenodd" stroke="#5FB4A2">
+                                        <path d="M0 9l8 4 8-4" />
+                                        <path opacity=".5" d="M0 5l8 4 8-4" />
+                                        <path opacity=".25" d="M0 1l8 4 8-4" />
+                                    </g>
+                                </svg></div>
+                            <p class="text-button-container">About me</p>
+                        </button>
+                </div>
             </div>
         </section>
         <section class="about-me">
@@ -52,9 +53,10 @@
                 <picture>
                     <source media="(min-width: 1110px)" srcset="img\homepage\desktop\image-homepage-profile.jpg">
                     <source media="(min-width: 768px)" srcset="img\homepage\tablet\image-homepage-profile.jpg">
-                    <source media="(min-width: 110px)" srcset="img\homepage\mobile\image-homepage-profile.jpg">
-                    <img src="OtherImage.png" alt="IfItDoesntMatchAnyMedia">
+                    <img src="img/homepage/mobile/image-homepage-profile.jpg"
+                        srcset="/img/homepage/mobile/image-homepage-profile@2x.jpg 2x">
                 </picture>
+
                 <div class="me-text">
                     <h2>About Me</h2>
                     <p>I’m a junior front-end developer looking for a new role in an exciting company. I focus on
@@ -67,9 +69,12 @@
                 </div>
                 <div class="contact-me">
 
-                <h2>Interested in doing a project together?</h2>
-                <button class="secondary">Contact me</button>
-            </div>
+                    <h2>Interested in doing a project together?</h2>
+                    <span class="divider"></span>
+                    <button class="secondary">
+                        <p>Contact me</p>
+                    </button>
+                </div>
             </div>
         </section>
     </main>
