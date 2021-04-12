@@ -106,7 +106,7 @@ p.secondary {
 
 .container {
   max-width: 100%;
-  margin: 2rem auto;
+  margin: 0 auto;
   padding:0 2rem;
 }
 
@@ -141,7 +141,7 @@ a:active {
 
 .toggle-menu div {
   width: 2.5rem;
-  height: 0.5rem;
+  height: 0.3rem;
   background-color: var(--primary-gray);
   margin: 0.5rem;
   transition: all 0.3s ease;
@@ -160,25 +160,8 @@ a:active {
 }
 
 
-.logo {
-	width: 12rem;
-	height: 2.8rem;
-	margin-right: 2.8rem;
-	background-image: url(../img/logo.png);
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-@media (min-resolution: 144dpi) {
-	.logo {
-		background-image: url(../img/logo@2x.png);
-	}
-}
-
 /* Navigation */
 
-/* Les display : flex, grid, inline, block, inline-block, inline-flex, none, table, table-cell, list-item, ... */
 [hidden] {
 	display: block;
 	visibility: hidden;
@@ -199,12 +182,12 @@ a:active {
 	right: 0;
 	background-color: var(--secondary-very-light-gray);
 	transform: translateX(-100%);
-	transition: transform .5s ease-out, visibility .001s .5s;
+	transition: transform .5s ease-in-out, visibility .001s .5s;
 }
 
 .menu:not([hidden]) {
 	transform: translateX(0%);
-	transition: visibility .001s, transform .5s .001s ease-in;
+	transition: visibility .001s, transform .5s .001s ease-in-out;
 }
 
 @media screen and (min-width: 48em) {
@@ -272,9 +255,9 @@ a:active {
 }
 
 
-@media screen and (min-width: 71.375em) {
+@media screen and (min-width: 69.375em) {
   .main-header .container {
-    max-width: 71.375em;
+    max-width: 69.375em;
 
   }}
 
@@ -370,6 +353,7 @@ img.img-to-hide {
     position: relative;
     height: 100vh;
     margin: 0 auto 10rem auto;
+    padding:0 2rem;
     /* max-width: 48em; */
   }
   .hero-wrapper {
@@ -398,21 +382,23 @@ img.img-to-hide {
 .about-me .container {
   display: grid;
   grid-template-columns: 1fr;
-  column-gap: 2rem;
   row-gap: 2rem;
 }
 
 @media screen and (min-width: 48em) {
   .about-me .container {
     max-width: 48em;
-    grid-template-columns: repeat(2, 1fr);
+    height:37.5em;
+    grid-template-columns: 17.56rem 1fr;
     row-gap: 5rem;
+    column-gap: 5rem;
   }
 }
 
 @media screen and (min-width: 69.375em) {
   .about-me .container {
     max-width: 69.375em;
+    grid-template-columns: 33.75rem 1fr;
   }
 }
 
@@ -426,11 +412,6 @@ img.img-to-hide {
   border-bottom: 0.1rem solid rgba(51, 50, 61, 0.15);
 }
 
-@media screen and (min-width: 48em) {
-  .me-text {
-    margin-left: 3rem;
-  }
-}
 
 
 .me-text p {
