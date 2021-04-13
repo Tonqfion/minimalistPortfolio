@@ -219,12 +219,14 @@ a:active {
   color: var(--primary-gray);
   width: 100%;
   padding: 2rem;
+  transition:.5s ease-in-out;
 }
 
 .menu-link:hover,
 .menu-link:active,
 .menu-link:focus {
   color: var(--primary-green);
+  transition:.5s ease-in-out;
 }
 
 .toggle .line1 {
@@ -270,6 +272,7 @@ button.primary {
   background-color: var(--primary-blue);
   display: flex;
   align-items: center;
+  transition: .5s ease-in-out;
 }
 
 .svg-container {
@@ -279,14 +282,19 @@ button.primary {
   width: 3rem;
   height: 3rem;
   background-color: rgba(0, 0, 0, 0.1);
+  transition: .5s ease-in-out;
 }
 
-button.primary:hover {
+button.primary:hover,
+button.primary:focus {
   background: var(--primary-green);
+  transition: .5s ease-in-out;
 }
 
-button.primary:hover g {
+button.primary:hover g,
+button.primary:focus g {
   stroke: #fff;
+  transition: .5s ease-in-out;
 }
 
 button.secondary {
@@ -297,6 +305,14 @@ button.secondary {
   padding: 0 2rem;
   border: 0.0625rem solid var(--primary-gray);
   background-color: #fff;
+  transition: .5s ease-in-out;
+}
+
+button.secondary:hover,
+button.secondary:focus {
+  background-color: var(--primary-gray);
+  color:var(--secondary-very-light-gray);
+  transition: .5s ease-in-out;
 }
 
 picture {
@@ -724,4 +740,75 @@ p.tech {
   .go-forward-detail svg {
     margin-left:2rem;
   }
+}
+
+
+/* Contact */
+
+.contact-form-main .container .portfolio-text .social-menu {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-entry {
+  display:flex;
+  flex-direction: column;
+  padding:1rem 0;
+}
+
+.form-entry label {
+  color:var(--primary-gray);
+  opacity: .8;
+  font-weight:700;
+  font-size:0.8125rem;
+  line-height:1.875rem;
+}
+
+.form-entry input, textarea {
+  padding:1rem;
+  font-size:0.8125rem;
+  line-height:1.875rem;
+  box-shadow: none;
+  border: none;
+  background-color: rgba(51, 50, 61, 0.10);
+}
+
+.form-entry textarea {
+  resize: none;
+}
+
+.form-entry input:active, textarea:active,
+.form-entry input:focus, textarea:focus {
+  border:0.0625rem solid var(--primary-green);
+}
+
+input[type=submit] {
+  font-size:.75rem;
+  line-height: .875rem;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  color:var(--secondary-very-light-gray);
+  max-width: fit-content;
+  max-width: -moz-fit-content;
+  height: 3rem;
+  padding: 0 2rem;
+  margin:2rem 0;
+  border:none;
+  border:.0625rem var(--primary-blue) solid; 
+  background-color: var(--primary-blue);
+  transition:.5s ease-in-out;
+}
+
+input[type=submit]:hover,
+input[type=submit]:focus {
+  background-color: var(--secondary-very-light-gray);
+  color:var(--primary-blue);
+  transition:.5s ease-in-out;
+}
+
+.error-text {
+  font-style: italic;
+  font-size:.625rem;
+  color:var(--secondary--red);
 }
