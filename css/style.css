@@ -298,9 +298,14 @@ button.secondary {
   border: 0.0625rem solid var(--primary-gray);
   background-color: #fff;
 }
+
 picture {
   margin: auto;
   padding: 1rem 0;
+}
+
+picture img {
+  margin:auto;
 }
 
 @media screen and (min-width: 48em) {
@@ -309,75 +314,37 @@ picture {
   }
 }
 
-img.img-to-hide {
-  margin: auto;
+.hero {
+  margin-bottom:5rem;
 }
 
-@media screen and (min-width: 48em) {
-  img.img-to-hide {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 69.375em) {
-  img.img-to-hide {
-    display: none;
-  }
-}
-
-/* @media screen and (min-width: 48em) {
-  .hero {
-    background-image: url("../img/homepage/tablet/image-homepage-hero.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 80vh;
-  }
-}
-
-@media screen and (min-width: 69.375em) {
-  .hero {
-    background-image: url("../img/homepage/desktop/image-homepage-hero.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 80vh;
-  }
-} */
 
 @media screen and (min-width: 48em) {
   .hero .container {
-    background-image: url("../img/homepage/tablet/image-homepage-hero.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
     position: relative;
-    height: 100vh;
-    margin: 0 auto 10rem auto;
-    padding: 0 2rem;
-    /* max-width: 48em; */
   }
-  .hero-wrapper {
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    width: 50%;
-    background-color: white;
+  .hero .container picture {
+    padding:0;
+  }
+
+  .hero .hero-wrapper {
+    position:absolute;
+    margin-left:2rem;
+    padding-right:2rem;
+    bottom:0;
+    left:0;
+    right:40%;
+    background-color:var(--secondary-very-light-gray);
   }
 }
+
 
 @media screen and (min-width: 69.375em) {
-  .hero .container {
-    background-image: url("../img/homepage/desktop/image-homepage-hero.jpg");
-    max-width: 69.375em;
-  }
 
-  .hero-wrapper {
-    position: absolute;
-    bottom: 0%;
-    width: 40%;
-    background-color: white;
+  .hero .hero-wrapper {
+    right:60%;
   }
 }
-
 .about-me .container {
   display: grid;
   grid-template-columns: 1fr;
