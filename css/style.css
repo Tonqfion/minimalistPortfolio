@@ -160,6 +160,16 @@ a:active {
 
 /* Navigation */
 
+.logo svg path {
+  transition:.3s ease-in-out;
+}
+
+.logo svg:hover path,
+.logo svg:focus path {
+  fill:var(--primary-green);
+  transition:.3s ease-in-out;
+}
+
 [hidden] {
   display: block;
   visibility: hidden;
@@ -182,16 +192,16 @@ a:active {
   background-color: var(--secondary-very-light-gray);
   transform: translateX(-100%);
   opacity: 0;
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
-    visibility 0.001s 0.5s;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out,
+    visibility 0.001s 0.3s;
 }
 
 .menu:not([hidden]) {
   transform: translateX(0%);
   height: 100vh;
   opacity: 0.9;
-  transition: visibility 0.001s, transform 0.5s 0.001s ease-in-out,
-    opacity 0.5s 0.001s ease-in-out;
+  transition: visibility 0.001s, transform 0.3s 0.001s ease-in-out,
+    opacity 0.3s 0.001s ease-in-out;
 }
 
 @media screen and (min-width: 48em) {
@@ -219,14 +229,14 @@ a:active {
   color: var(--primary-gray);
   width: 100%;
   padding: 2rem;
-  transition:.5s ease-in-out;
+  transition:.3s ease-in-out;
 }
 
 .menu-link:hover,
 .menu-link:active,
 .menu-link:focus {
   color: var(--primary-green);
-  transition:.5s ease-in-out;
+  transition:.3s ease-in-out;
 }
 
 .toggle .line1 {
@@ -272,7 +282,7 @@ button.primary {
   background-color: var(--primary-blue);
   display: flex;
   align-items: center;
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .svg-container {
@@ -282,19 +292,19 @@ button.primary {
   width: 3rem;
   height: 3rem;
   background-color: rgba(0, 0, 0, 0.1);
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 button.primary:hover,
 button.primary:focus {
   background: var(--primary-green);
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 button.primary:hover g,
 button.primary:focus g {
   stroke: #fff;
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 button.secondary {
@@ -305,14 +315,14 @@ button.secondary {
   padding: 0 2rem;
   border: 0.0625rem solid var(--primary-gray);
   background-color: #fff;
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 button.secondary:hover,
 button.secondary:focus {
   background-color: var(--primary-gray);
   color:var(--secondary-very-light-gray);
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 picture {
@@ -451,6 +461,14 @@ picture img {
 
 .main-footer .container .logo-white {
   padding: 1.25rem;
+  transition: .3s ease-in-out;
+}
+
+.main-footer .container .logo-white svg:hover path,
+.main-footer .container .logo-white svg:focus path {
+  fill:var(--primary-green);
+  transition: .3s ease-in-out;
+
 }
 
 @media screen and (min-width: 48em) {
@@ -469,6 +487,13 @@ picture img {
   font-size: 0.75rem;
   line-height: 0.875rem;
   letter-spacing: 0.125rem;
+  transition: .3s ease-in-out;
+}
+
+.secondary-menu-item a:hover,
+.secondary-menu-item a:focus {
+  color:var(--primary-green);
+  transition: .3s ease-in-out;
 }
 
 @media screen and (min-width: 48em) {
@@ -484,6 +509,16 @@ picture img {
 
 .social-menu svg {
   margin: 0 0.5rem;
+}
+
+.social-menu svg path {  
+  transition: .3s ease-in-out;
+}
+
+.social-menu svg:hover path,
+.social-menu svg:focus path  {
+  fill:var(--primary-green);
+  transition: .3s ease-in-out;
 }
 
 /* Specific Portfolio */
@@ -797,14 +832,14 @@ input[type=submit] {
   border:none;
   border:.0625rem var(--primary-blue) solid; 
   background-color: var(--primary-blue);
-  transition:.5s ease-in-out;
+  transition:.3s ease-in-out;
 }
 
 input[type=submit]:hover,
 input[type=submit]:focus {
   background-color: var(--secondary-very-light-gray);
   color:var(--primary-blue);
-  transition:.5s ease-in-out;
+  transition:.3s ease-in-out;
 }
 
 .error-text {
