@@ -812,3 +812,21 @@ input[type=submit]:focus {
   font-size:.625rem;
   color:var(--secondary--red);
 }
+
+
+@media screen and (min-width: 69.375em) {
+  .contact-form-main .container .portfolio-text,
+  .contact-form-main .container .form-wrapper {
+    display:flex;
+    column-gap: 5rem;
+  }
+  
+  .contact-form-main .container h2 {
+    min-width:21.875rem;
+  }
+
+  .contact-form-main .container .form-wrapper form {
+    flex-grow: 1;
+  }
+
+}
