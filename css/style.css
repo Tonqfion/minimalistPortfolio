@@ -48,6 +48,10 @@
   --secondary--red: #f43030;
 }
 
+:focus {
+  outline: none;
+}
+
 button {
   margin: 0;
   padding: 0;
@@ -164,8 +168,8 @@ a:active {
   transition:.3s ease-in-out;
 }
 
-.logo svg:hover path,
-.logo svg:focus path {
+.logo a:hover svg path,
+.logo a:focus svg path {
   fill:var(--primary-green);
   transition:.3s ease-in-out;
 }
@@ -464,8 +468,8 @@ picture img {
   transition: .3s ease-in-out;
 }
 
-.main-footer .container .logo-white svg:hover path,
-.main-footer .container .logo-white svg:focus path {
+.main-footer .container .logo-white a:hover svg path,
+.main-footer .container .logo-white a:focus svg path {
   fill:var(--primary-green);
   transition: .3s ease-in-out;
 
@@ -511,12 +515,12 @@ picture img {
   margin: 0 0.5rem;
 }
 
-.social-menu svg path {  
+.social-menu a svg path {  
   transition: .3s ease-in-out;
 }
 
-.social-menu svg:hover path,
-.social-menu svg:focus path  {
+.social-menu a:hover svg path,
+.social-menu a:focus svg path  {
   fill:var(--primary-green);
   transition: .3s ease-in-out;
 }
@@ -745,12 +749,12 @@ p.tech {
 }
 
 .go-back-detail {
-  border-right: 0.1rem solid rgba(51, 50, 61, 0.15);
+  border-right: 0.05rem solid rgba(51, 50, 61, 0.15);
 }
-.go-forward-detail {
+.go-forward-detail{
   align-items: flex-end;
   text-align: right;
-  border-left: 0.1rem solid rgba(51, 50, 61, 0.15);
+  border-left: 0.05rem solid rgba(51, 50, 61, 0.15);
 }
 
 .detail-footer p {
@@ -758,14 +762,14 @@ p.tech {
 }
 
 @media screen and (min-width: 48em) {
-.go-back-detail, .go-forward-detail {
+.go-back-detail, .go-forward-detail{
   align-items:center;
 }
   
-  .go-back-detail {
+  .go-back-detail{
     flex-direction: row;
   }
-  .go-forward-detail {
+  .go-forward-detail{
     flex-direction: row-reverse;
   }
 
