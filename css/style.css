@@ -52,7 +52,7 @@
   outline: none;
 }
 
-button {
+a.primary, a.secondary {
   margin: 0;
   padding: 0;
   border-style: none;
@@ -279,7 +279,7 @@ a:active {
 
 /* Boutons */
 
-button.primary {
+a.primary {
   width: 12.5rem;
   height: 3rem;
   color: var(--secondary-very-light-gray);
@@ -299,19 +299,21 @@ button.primary {
   transition: .3s ease-in-out;
 }
 
-button.primary:hover,
-button.primary:focus {
+a.primary:hover,
+a.primary:focus {
   background: var(--primary-green);
   transition: .3s ease-in-out;
 }
 
-button.primary:hover g,
-button.primary:focus g {
+a.primary:hover g,
+a.primary:focus g {
   stroke: #fff;
   transition: .3s ease-in-out;
 }
 
-button.secondary {
+a.secondary {
+  display:flex;
+  align-items: center;
   text-transform: uppercase;
   max-width: fit-content;
   max-width: -moz-fit-content;
@@ -322,8 +324,8 @@ button.secondary {
   transition: .3s ease-in-out;
 }
 
-button.secondary:hover,
-button.secondary:focus {
+a.secondary:hover,
+a.secondary:focus {
   background-color: var(--primary-gray);
   color:var(--secondary-very-light-gray);
   transition: .3s ease-in-out;
